@@ -1,0 +1,79 @@
+/* Style global de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7f4fc; /* Bleu très pâle en fond */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #a7c7e7; /* Bleu pastel pour l'en-tête */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section principale */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre des sections */
+.section-title {
+    color: #5b8ab1; /* Bleu doux pour les titres de section */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Image de profil */
+.profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Liste d'informations */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: #a7c7e7; /* Même bleu pastel pour le pied de page */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Style global de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fond léger pour ne pas trop saturer */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: 
+        
