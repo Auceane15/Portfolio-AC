@@ -77,3 +77,96 @@ body {
     color: #333;
     background-image: 
         
+/* Style global de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fond léger pour ne pas trop saturer */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: 
+        url('https://www.example.com/ballon-soccer.png'), /* Exemple d'icône de ballon de foot */
+        url('https://www.example.com/running-shoes.png'), /* Exemple d'icône de chaussures de course */
+        url('https://www.example.com/basketball-hoop.png'); /* Exemple d'icône de panier de basket */
+    background-repeat: repeat, repeat, repeat; /* Répéter les motifs */
+    background-size: 100px 100px, 100px 100px, 100px 100px; /* Taille des icônes */
+    background-position: 0 0, 50% 50%, 100% 100%; /* Position des icônes */
+      animation: float 3s ease-in-out infinite;
+}
+
+/* En-tête */
+header {
+    background-color: #0066cc; /* Bleu dynamique pour l'en-tête */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Section principale */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre des sections */
+.section-title {
+    color: #0066cc; /* Bleu pour rappeler l'aspect sportif */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Image de profil */
+.profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Liste d'informations */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: #0066cc; /* Bleu dynamique pour le pied de page */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation des icônes de sport pour un effet dynamique */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
