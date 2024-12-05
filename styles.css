@@ -79,7 +79,13 @@ section p {
     line-height: 1.8;
 }
 
-/* Footer */
+/* Section "Mes passions et objectifs" */
+section h3 {
+    font-size: 2rem;
+    color: var(--bleu-clair);
+    margin-top: 30px;
+}
+
 footer {
     background-color: var(--bleu-fonce);
     color: var(--bleu-clair);
