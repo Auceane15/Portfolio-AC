@@ -1,10 +1,8 @@
 /* Palette de couleurs */
 :root {
-    --bleu-principal: #3498db;
-    --bleu-sombre: #2980b9;
-    --gris-clair: #ecf0f1;
-    --gris-sombre: #2c3e50;
-    --blanc: #ffffff;
+    --bleu-clair: #5dade2; /* Bleu clair pour le texte */
+    --bleu-fonce: #2c3e50; /* Bleu foncé pour le fond */
+    --blanc: #ffffff;      /* Blanc pour le texte secondaire */
 }
 
 /* Style global */
@@ -12,142 +10,84 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--gris-clair);
-    color: var(--gris-sombre);
+    background-color: var(--bleu-fonce);
+    color: var(--blanc);
+    line-height: 1.6;
 }
 
 /* En-tête */
 header {
-    background-color: var(--bleu-principal);
-    color: var(--blanc);
-    padding: 60px 20px;
+    background-color: var(--bleu-fonce);
+    color: var(--bleu-clair);
     text-align: center;
+    padding: 50px 0;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
+    margin: 0;
 }
 
 /* Navigation */
 nav {
-    background-color: var(--bleu-sombre);
-    padding: 15px 0;
+    background-color: var(--bleu-clair);
+    padding: 10px;
+    text-align: center;
 }
 
-nav .container {
-    display: flex;
-    justify-content: center;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 20px;
 }
 
 nav a {
-    color: var(--blanc);
+    color: var(--bleu-fonce);
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--bleu-principal);
+    color: var(--blanc);
 }
 
-/* Section À propos */
+/* Section "À propos de moi" */
 section {
-    padding: 60px 20px;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: var(--bleu-fonce);
+    border-radius: 8px;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-h2 {
+section h2 {
     font-size: 2.5rem;
-    color: var(--bleu-principal);
+    color: var(--bleu-clair);
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
+section p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.project {
-    margin-bottom: 30px;
-}
-
-.project h3 {
-    font-size: 1.8rem;
-    color: var(--bleu-principal);
-}
-
-.project p {
-    font-size: 1.1rem;
-}
-
-/* Formulaire de contact */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid var(--gris-sombre);
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-button {
-    background-color: var(--bleu-principal);
     color: var(--blanc);
-    padding: 15px;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--bleu-sombre);
+    line-height: 1.8;
 }
 
 /* Footer */
 footer {
-    background-color: var(--bleu-sombre);
-    color: var(--blanc);
+    background-color: var(--bleu-fonce);
+    color: var(--bleu-clair);
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
 }
 
 footer p {
     font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 10px 0;
-    }
+    margin: 0;
 }
