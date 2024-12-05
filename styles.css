@@ -114,25 +114,4 @@ nav a:hover {
 .section p {
     font-size: 1.1rem;
     color: var(--bleu-fonce);
-    line-height: 1.8;
-    margin-bottom: 20px;
 }
-
-.section-img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: var(--bleu-fonce);
-    color: var(--blanc);
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive Design */
