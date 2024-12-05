@@ -1,172 +1,183 @@
-/* Style global de la page */
+/* Définition de la palette de couleurs */
+:root {
+    --bleu-principal: #007BFF; /* Bleu principal */
+    --bleu-sombre: #0056b3;   /* Bleu plus sombre pour les effets */
+    --gris-clair: #f5f5f5;    /* Fond léger */
+    --gris-sombre: #333;      /* Texte sombre */
+    --blanc: #fff;           /* Blanc pour les contrastes */
+}
+
+/* Style général du corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e7f4fc; /* Bleu très pâle en fond */
+    font-family: 'Arial', sans-serif;
+    background-color: var(--gris-clair);
+    color: var(--gris-sombre);
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* En-tête */
+/* En-tête du site */
 header {
-    background-color: #a7c7e7; /* Bleu pastel pour l'en-tête */
-    color: white;
-    text-align: center;
+    background-color: var(--bleu-principal);
     padding: 20px;
+    text-align: center;
+    color: var(--blanc);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-header h1 {
-    margin: 0;
+/* Navigation */
+nav {
+    background-color: var(--bleu-sombre);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--bleu-principal);
+    color: var(--gris-clair);
+    border-radius: 5px;
 }
 
 /* Section principale */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+main {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-/* Titre des sections */
-.section-title {
-    color: #5b8ab1; /* Bleu doux pour les titres de section */
-    font-size: 1.5em;
+h1 {
+    font-size: 3rem;
+    color: var(--bleu-principal);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Section interactive (par exemple, boutons ou éléments cliquables) */
+button {
+    background-color: var(--bleu-principal);
+    color: var(--blanc);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--bleu-sombre);
+    transform: scale(1.05);
+}
+
+/* Carrousel ou galerie */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.carousel:hover img {
+    transform: scale(1.1);
+}
+
+/* Carte d'information (par exemple, équipes, joueurs, etc.) */
+.card {
+    background-color: var(--blanc);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--bleu-principal);
     margin-bottom: 10px;
 }
 
-/* Image de profil */
-.profile-pic {
-    max-width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+.card-description {
+    font-size: 1rem;
+    color: var(--gris-sombre);
 }
 
-/* Liste d'informations */
-.info-list {
-    list-style: none;
-    padding: 0;
-}
-
-.info-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.info-list li:last-child {
-    border-bottom: none;
-}
-
-/* Pied de page */
+/* Footer */
 footer {
-    text-align: center;
-    background-color: #a7c7e7; /* Même bleu pastel pour le pied de page */
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Style global de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Fond léger pour ne pas trop saturer */
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-image: 
-        
-/* Style global de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Fond léger pour ne pas trop saturer */
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-image: 
-        url('https://www.example.com/ballon-soccer.png'), /* Exemple d'icône de ballon de foot */
-        url('https://www.example.com/running-shoes.png'), /* Exemple d'icône de chaussures de course */
-        url('https://www.example.com/basketball-hoop.png'); /* Exemple d'icône de panier de basket */
-    background-repeat: repeat, repeat, repeat; /* Répéter les motifs */
-    background-size: 100px 100px, 100px 100px, 100px 100px; /* Taille des icônes */
-    background-position: 0 0, 50% 50%, 100% 100%; /* Position des icônes */
-      animation: float 3s ease-in-out infinite;
-}
-
-/* En-tête */
-header {
-    background-color: #0066cc; /* Bleu dynamique pour l'en-tête */
-    color: white;
-    text-align: center;
+    background-color: var(--bleu-sombre);
+    color: var(--blanc);
     padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Section principale */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Titre des sections */
-.section-title {
-    color: #0066cc; /* Bleu pour rappeler l'aspect sportif */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* Image de profil */
-.profile-pic {
-    max-width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Liste d'informations */
-.info-list {
-    list-style: none;
-    padding: 0;
-}
-
-.info-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.info-list li:last-child {
-    border-bottom: none;
-}
-
-/* Pied de page */
-footer {
     text-align: center;
-    background-color: #0066cc; /* Bleu dynamique pour le pied de page */
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Animation des icônes de sport pour un effet dynamique */
-@keyframes float {
-    0% {
-        transform: translateY(0);
+footer a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
     }
-    50% {
-        transform: translateY(-10px);
+
+    nav a {
+        margin: 10px 0;
     }
-    100% {
-        transform: translateY(0);
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel img {
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
     }
 }
 
