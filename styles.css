@@ -85,7 +85,11 @@ nav a:hover {
     border-radius: 12px;
     position: relative;
 }
-
+img {
+    max-width: 100%;  /* L'image ne dépassera jamais la largeur de son conteneur */
+    height: auto;     /* La hauteur s'ajustera automatiquement pour garder le ratio */
+    display: block;   /* Enlève l'espace blanc sous l'image */
+}
 .section-header h2 {
     font-size: 2.5rem;
     color: var(--bleu-fonce);
