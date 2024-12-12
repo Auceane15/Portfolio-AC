@@ -2,7 +2,7 @@
 :root {
     --bleu-clair: #5dade2; /* Bleu clair pour le texte */
     --bleu-fonce: #2c3e50; /* Bleu foncé pour le fond */
-    --blanc: #ffffff;      /* Blanc pour le texte secondaire */
+    --blanc: #003366;      /* Blanc pour le texte secondaire */
     --gris-clair: #f4f4f4; /* Gris clair pour les sections */
 }
 
